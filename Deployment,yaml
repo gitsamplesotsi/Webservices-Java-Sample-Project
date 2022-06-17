@@ -1,0 +1,20 @@
+apiVersion: apps/v1 
+kind: Deployment 
+metadata: 
+ name: Webservices-Java
+spec: 
+ replicas: 2 
+ strategy: 
+  type: Recreate 
+ selector: 
+  matchLabels: 
+   app: Webservices-Java
+ template: 
+   metadata: 
+    labels: 
+     app: Webservices-Java
+     env: prod 
+   spec: 
+    containers: 
+    - name: my-deployment-container 
+      image: docker1otsi/Webservices-Java
