@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
- name:webservices-java-svc
+ name: webservices-java-svc
 spec:
  type: NodePort
  selector:
