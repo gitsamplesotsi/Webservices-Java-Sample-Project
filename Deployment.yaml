@@ -1,18 +1,18 @@
 apiVersion: apps/v1 
 kind: Deployment 
 metadata: 
- name: Webservices-Java
+ name: webservices-java
 spec: 
  replicas: 2 
  strategy: 
   type: Recreate 
  selector: 
   matchLabels: 
-   app: Webservices-Java
+   app: webservices-java
  template: 
    metadata: 
     labels: 
-     app: Webservices-Java
+     app: webservices-java
      env: prod 
    spec: 
     containers: 
