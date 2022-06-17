@@ -17,4 +17,4 @@ spec:
    spec: 
     containers: 
     - name: my-deployment-container 
-      image: docker1otsi/webservices-Java
+      image: docker1otsi/webservices-java
